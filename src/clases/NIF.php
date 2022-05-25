@@ -14,6 +14,9 @@ class NIF
         if (strlen((string)$dni) == 8 && $this->comprobarLetraNIF($dni, $letra)) {
             $this->dni = $dni;
             $this->letra = $letra;
+        } else {
+            $this->dni = 0;
+            $this->letra = NAN;
         }
     }
 
@@ -30,5 +33,10 @@ class NIF
     private function comprobarLetraNIF(int $dni, string $letra): bool
     {
         return $this->calcLetraNIF($dni) == $letra;
+    }
+
+    public function getNIF(): string
+    {
+        return $this->dni == 0 ? "Error de creación: DNI o letra incorrectos" : $this->dni . $this->letra;
     }
 }

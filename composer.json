@@ -9,13 +9,13 @@
     "autoload": {
         "psr-4": {
             "PHPUnit\\": "vendor/phpunit/phpunit/src/",
-            "ITEC\\DAW\\puntos\\": "src/clases/"
+            "ITEC\\DAW\\POO\\": "src/clases/"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "PHPUnit\\": "vendor/phpunit/phpunit/src/",
-            "ITEC\\DAW\\puntos\\": "src/clases/"
+            "ITEC\\DAW\\POO\\": "src/clases/"
         }
     }
 }
